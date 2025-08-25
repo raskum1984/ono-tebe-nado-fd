@@ -51,7 +51,7 @@ body {
   font-style: normal;
   }
 
-.nav__item-underline { 
+.nav__item-underline {
   text-decoration: underline 1px; /* Подчёркивание текста общее */
   text-underline-offset: 5px; /* Расстояние между текстом и подчёркиванием */
 }
@@ -133,6 +133,7 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
+  background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
   padding: 12px 32px 11px 31px

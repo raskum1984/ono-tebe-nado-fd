@@ -41,7 +41,7 @@ body {
   width: 148px;
 }
 
-.header__address{
+.header__address {
   display: flex;
   flex-direction: column;
   align-self: end;
@@ -112,7 +112,7 @@ body {
   margin-right: -0.3em; /* Сдвиг текста вправо, компенсируем letter-spacing у последней буквы  */
 }
 
-.cover__description{
+.cover__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,7 +218,7 @@ body {
   background-position: center;
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
   display: block;
   font-weight: 400;
   font-size: 20px;

@@ -8,11 +8,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 92px 50px 96px 50px;
-  /*min-height: 293px;*/
 }
 
 /*Общие свойства для текста в header*/
 .hader__text-link {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.35;
@@ -21,15 +21,18 @@ body {
 
 .header__nav-list {
   display: flex;
-  justify-content: flex-start; /* Выравнивание элементов по левому краю */
+  justify-content: flex-start;
+  /* Выравнивание элементов по левому краю */
   list-style: circle;
-  gap: 33px; /* Расстояние между элементами меню */
+  gap: 33px;
+  /* Расстояние между элементами меню */
   /*margin-bottom: 2px;*/
 }
 
 .header__nav-item--active,
 .footer__menu-link_active {
-  list-style: none; /* Убираем маркер для активного элемента */
+  list-style: none;
+  /* Убираем маркер для активного элемента */
 }
 
 .header__logo {
@@ -41,19 +44,26 @@ body {
   width: 148px;
 }
 
-.header__address {
+/* общие стили для блока address в header и footer */
+.layout__address {
   display: flex;
   flex-direction: column;
-  align-self: end;
-  align-items: flex-start;
-  max-width: 225px;
-  justify-self: end;
+  max-width: 240px;
   font-style: normal;
-  }
+}
+
+/* дополнительное выравнивание для блока address в header */
+.header__address {
+  justify-self: end;
+  padding-left: 15px;
+  padding-top: 8px;
+}
 
 .nav__item-underline {
-  text-decoration: underline 1px; /* Подчёркивание текста общее */
-  text-underline-offset: 5px; /* Расстояние между текстом и подчёркиванием */
+  text-decoration: underline 1px;
+  /* Подчёркивание текста общее */
+  text-underline-offset: 5px;
+  /* Расстояние между текстом и подчёркиванием */
 }
 
 .cover {
@@ -64,6 +74,7 @@ body {
   background-position: center;
   min-height: 757px;
 }
+
 /*Общие свойства для затемнения*/
 .overlay {
   position: absolute;
@@ -72,7 +83,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  }
+}
 
 .cover__title {
   font-weight: 700;
@@ -82,12 +93,12 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 165px 50px 107px 50px
-  
 }
 
 .index__position {
   position: relative;
-  z-index: 1; /* Помещаем текст поверх затемнения */
+  z-index: 1;
+  /* Помещаем текст поверх затемнения */
 }
 
 .aligned-text {
@@ -109,7 +120,8 @@ body {
 }
 
 .no-letter-spacing {
-  margin-right: -0.3em; /* Сдвиг текста вправо, компенсируем letter-spacing у последней буквы  */
+  margin-right: -0.3em;
+  /* Сдвиг текста вправо, компенсируем letter-spacing у последней буквы  */
 }
 
 .cover__description {
@@ -135,7 +147,7 @@ body {
   text-align: center;
   background-color: transparent;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 12px 32px 11px 31px
 }
 
@@ -161,7 +173,7 @@ body {
 
 .lots__card-list-item {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 .card-link,
@@ -198,25 +210,22 @@ body {
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   inset: 0;
 }
 
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__look-more-link {
@@ -243,7 +252,6 @@ body {
   padding-top: 134px;
   padding-left: 25px;
   padding-right: 24px
-  
 }
 
 .about__logo {
@@ -286,8 +294,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 180px;
-  padding: 0px 50px 0px 51px;
+  padding: 0px 50px 82px 51px;
 }
 
 .footer__menu-list {
@@ -296,9 +303,10 @@ body {
   justify-content: start;
   align-items: center;
   list-style: none;
- }
+}
 
 .footer__menu-link {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -317,13 +325,4 @@ body {
   align-items: flex-start;
   list-style: none;
   gap: 48px;
-}
-
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: self-start;
-  font-style: normal;
-  max-width: 265px;
 }

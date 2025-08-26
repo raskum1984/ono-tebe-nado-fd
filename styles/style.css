@@ -201,7 +201,7 @@ body {
   color: #fff;
 }
 /* Общие стили для карточек*/
-.card_type_film {
+.card_type {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

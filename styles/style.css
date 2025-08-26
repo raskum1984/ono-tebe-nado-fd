@@ -21,18 +21,14 @@ body {
 
 .header__nav-list {
   display: flex;
-  justify-content: flex-start;
-  /* Выравнивание элементов по левому краю */
+  justify-content: flex-start; /* Выравнивание элементов по левому краю */
   list-style: circle;
-  gap: 33px;
-  /* Расстояние между элементами меню */
-  /*margin-bottom: 2px;*/
+  gap: 33px; /* Расстояние между элементами меню */
 }
 
 .header__nav-item--active,
 .footer__menu-link_active {
-  list-style: none;
-  /* Убираем маркер для активного элемента */
+  list-style: none; /* Убираем маркер для активного элемента */
 }
 
 .header__logo {
@@ -60,10 +56,8 @@ body {
 }
 
 .nav__item-underline {
-  text-decoration: underline 1px;
-  /* Подчёркивание текста общее */
-  text-underline-offset: 5px;
-  /* Расстояние между текстом и подчёркиванием */
+  text-decoration: underline 1px; /* Подчёркивание текста общее */
+  text-underline-offset: 5px; /* Расстояние между текстом и подчёркиванием */
 }
 
 .cover {
@@ -97,8 +91,7 @@ body {
 
 .index__position {
   position: relative;
-  z-index: 1;
-  /* Помещаем текст поверх затемнения */
+  z-index: 1; /* Помещаем текст поверх затемнения */
 }
 
 .aligned-text {
@@ -120,8 +113,7 @@ body {
 }
 
 .no-letter-spacing {
-  margin-right: -0.3em;
-  /* Сдвиг текста вправо, компенсируем letter-spacing у последней буквы  */
+  margin-right: -0.3em; /* Сдвиг текста вправо, компенсируем letter-spacing у последней буквы  */
 }
 
 .cover__description {
@@ -208,7 +200,7 @@ body {
   line-height: 1.2;
   color: #fff;
 }
-
+/* Общие стили для карточек*/
 .card_type_film {
   background-repeat: no-repeat;
   background-size: cover;

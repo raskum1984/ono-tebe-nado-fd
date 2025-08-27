@@ -51,8 +51,6 @@ body {
 /* дополнительное выравнивание для блока address в header */
 .header__address {
   justify-self: end;
-  padding-left: 15px;
-  padding-top: 8px;
 }
 
 .nav__item-underline {
